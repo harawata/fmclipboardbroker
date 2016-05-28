@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B283EA7B1CF988A800640834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283EA7A1CF988A800640834 /* AppDelegate.swift */; };
+		B283EA7D1CF988A800640834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B283EA7C1CF988A800640834 /* Assets.xcassets */; };
+		B283EA801CF988A800640834 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B283EA7E1CF988A800640834 /* MainMenu.xib */; };
+		B283EA8B1CF988A800640834 /* FMClipboardBrokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283EA8A1CF988A800640834 /* FMClipboardBrokerTests.swift */; };
+		B283EA961CF988A800640834 /* FMClipboardBrokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B283EA871CF988A800640834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B283EA6F1CF988A800640834 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B283EA761CF988A800640834;
+			remoteInfo = FMClipboardBroker;
+		};
+		B283EA921CF988A800640834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B283EA6F1CF988A800640834 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B283EA761CF988A800640834;
+			remoteInfo = FMClipboardBroker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B283EA771CF988A800640834 /* FMClipboardBroker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMClipboardBroker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B283EA7A1CF988A800640834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B283EA7C1CF988A800640834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B283EA7F1CF988A800640834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B283EA811CF988A800640834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B283EA861CF988A800640834 /* FMClipboardBrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMClipboardBrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B283EA8A1CF988A800640834 /* FMClipboardBrokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMClipboardBrokerTests.swift; sourceTree = "<group>"; };
+		B283EA8C1CF988A800640834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B283EA911CF988A800640834 /* FMClipboardBrokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMClipboardBrokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMClipboardBrokerUITests.swift; sourceTree = "<group>"; };
+		B283EA971CF988A800640834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B283EA741CF988A800640834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA831CF988A800640834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA8E1CF988A800640834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B283EA6E1CF988A800640834 = {
+			isa = PBXGroup;
+			children = (
+				B283EA791CF988A800640834 /* FMClipboardBroker */,
+				B283EA891CF988A800640834 /* FMClipboardBrokerTests */,
+				B283EA941CF988A800640834 /* FMClipboardBrokerUITests */,
+				B283EA781CF988A800640834 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B283EA781CF988A800640834 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B283EA771CF988A800640834 /* FMClipboardBroker.app */,
+				B283EA861CF988A800640834 /* FMClipboardBrokerTests.xctest */,
+				B283EA911CF988A800640834 /* FMClipboardBrokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B283EA791CF988A800640834 /* FMClipboardBroker */ = {
+			isa = PBXGroup;
+			children = (
+				B283EA7A1CF988A800640834 /* AppDelegate.swift */,
+				B283EA7C1CF988A800640834 /* Assets.xcassets */,
+				B283EA7E1CF988A800640834 /* MainMenu.xib */,
+				B283EA811CF988A800640834 /* Info.plist */,
+			);
+			path = FMClipboardBroker;
+			sourceTree = "<group>";
+		};
+		B283EA891CF988A800640834 /* FMClipboardBrokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B283EA8A1CF988A800640834 /* FMClipboardBrokerTests.swift */,
+				B283EA8C1CF988A800640834 /* Info.plist */,
+			);
+			path = FMClipboardBrokerTests;
+			sourceTree = "<group>";
+		};
+		B283EA941CF988A800640834 /* FMClipboardBrokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */,
+				B283EA971CF988A800640834 /* Info.plist */,
+			);
+			path = FMClipboardBrokerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B283EA761CF988A800640834 /* FMClipboardBroker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B283EA9A1CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBroker" */;
+			buildPhases = (
+				B283EA731CF988A800640834 /* Sources */,
+				B283EA741CF988A800640834 /* Frameworks */,
+				B283EA751CF988A800640834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMClipboardBroker;
+			productName = FMClipboardBroker;
+			productReference = B283EA771CF988A800640834 /* FMClipboardBroker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B283EA851CF988A800640834 /* FMClipboardBrokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B283EA9D1CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerTests" */;
+			buildPhases = (
+				B283EA821CF988A800640834 /* Sources */,
+				B283EA831CF988A800640834 /* Frameworks */,
+				B283EA841CF988A800640834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B283EA881CF988A800640834 /* PBXTargetDependency */,
+			);
+			name = FMClipboardBrokerTests;
+			productName = FMClipboardBrokerTests;
+			productReference = B283EA861CF988A800640834 /* FMClipboardBrokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B283EA901CF988A800640834 /* FMClipboardBrokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B283EAA01CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerUITests" */;
+			buildPhases = (
+				B283EA8D1CF988A800640834 /* Sources */,
+				B283EA8E1CF988A800640834 /* Frameworks */,
+				B283EA8F1CF988A800640834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B283EA931CF988A800640834 /* PBXTargetDependency */,
+			);
+			name = FMClipboardBrokerUITests;
+			productName = FMClipboardBrokerUITests;
+			productReference = B283EA911CF988A800640834 /* FMClipboardBrokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B283EA6F1CF988A800640834 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Iwao AVE!";
+				TargetAttributes = {
+					B283EA761CF988A800640834 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B283EA851CF988A800640834 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B283EA761CF988A800640834;
+					};
+					B283EA901CF988A800640834 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B283EA761CF988A800640834;
+					};
+				};
+			};
+			buildConfigurationList = B283EA721CF988A800640834 /* Build configuration list for PBXProject "FMClipboardBroker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B283EA6E1CF988A800640834;
+			productRefGroup = B283EA781CF988A800640834 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B283EA761CF988A800640834 /* FMClipboardBroker */,
+				B283EA851CF988A800640834 /* FMClipboardBrokerTests */,
+				B283EA901CF988A800640834 /* FMClipboardBrokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B283EA751CF988A800640834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B283EA7D1CF988A800640834 /* Assets.xcassets in Resources */,
+				B283EA801CF988A800640834 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA841CF988A800640834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA8F1CF988A800640834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B283EA731CF988A800640834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B283EA7B1CF988A800640834 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA821CF988A800640834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B283EA8B1CF988A800640834 /* FMClipboardBrokerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B283EA8D1CF988A800640834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B283EA961CF988A800640834 /* FMClipboardBrokerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B283EA881CF988A800640834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B283EA761CF988A800640834 /* FMClipboardBroker */;
+			targetProxy = B283EA871CF988A800640834 /* PBXContainerItemProxy */;
+		};
+		B283EA931CF988A800640834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B283EA761CF988A800640834 /* FMClipboardBroker */;
+			targetProxy = B283EA921CF988A800640834 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B283EA7E1CF988A800640834 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B283EA7F1CF988A800640834 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B283EA981CF988A800640834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B283EA991CF988A800640834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B283EA9B1CF988A800640834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBroker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBroker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B283EA9C1CF988A800640834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBroker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBroker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B283EA9E1CF988A800640834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBrokerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBrokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMClipboardBroker.app/Contents/MacOS/FMClipboardBroker";
+			};
+			name = Debug;
+		};
+		B283EA9F1CF988A800640834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBrokerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBrokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMClipboardBroker.app/Contents/MacOS/FMClipboardBroker";
+			};
+			name = Release;
+		};
+		B283EAA11CF988A800640834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBrokerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBrokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMClipboardBroker;
+			};
+			name = Debug;
+		};
+		B283EAA21CF988A800640834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FMClipboardBrokerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.harawata.FMClipboardBrokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMClipboardBroker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B283EA721CF988A800640834 /* Build configuration list for PBXProject "FMClipboardBroker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B283EA981CF988A800640834 /* Debug */,
+				B283EA991CF988A800640834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B283EA9A1CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBroker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B283EA9B1CF988A800640834 /* Debug */,
+				B283EA9C1CF988A800640834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B283EA9D1CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B283EA9E1CF988A800640834 /* Debug */,
+				B283EA9F1CF988A800640834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B283EAA01CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B283EAA11CF988A800640834 /* Debug */,
+				B283EAA21CF988A800640834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B283EA6F1CF988A800640834 /* Project object */;
+}
