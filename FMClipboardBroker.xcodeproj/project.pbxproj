@@ -12,6 +12,10 @@
 		B283EA801CF988A800640834 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B283EA7E1CF988A800640834 /* MainMenu.xib */; };
 		B283EA8B1CF988A800640834 /* FMClipboardBrokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283EA8A1CF988A800640834 /* FMClipboardBrokerTests.swift */; };
 		B283EA961CF988A800640834 /* FMClipboardBrokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */; };
+		B2E309BE1CFF22AC00E294EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E309C01CFF22AC00E294EE /* InfoPlist.strings */; };
+		B2E309C31CFF22AD00E294EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E309C51CFF22AD00E294EE /* InfoPlist.strings */; };
+		B2E309C81CFF22AD00E294EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E309CA1CFF22AD00E294EE /* InfoPlist.strings */; };
+		B2E309CD1CFF22AE00E294EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E309CF1CFF22AE00E294EE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,12 @@
 		B283EA911CF988A800640834 /* FMClipboardBrokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMClipboardBrokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMClipboardBrokerUITests.swift; sourceTree = "<group>"; };
 		B283EA971CF988A800640834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E309BB1CFF0E5900E294EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		B2E309BF1CFF22AC00E294EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2E309C41CFF22AD00E294EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2E309C91CFF22AD00E294EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2E309CE1CFF22AE00E294EE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2E309D01CFF28EB00E294EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,8 @@
 		B283EA791CF988A800640834 /* FMClipboardBroker */ = {
 			isa = PBXGroup;
 			children = (
+				B2E309CF1CFF22AE00E294EE /* Localizable.strings */,
+				B2E309C51CFF22AD00E294EE /* InfoPlist.strings */,
 				B283EA7A1CF988A800640834 /* AppDelegate.swift */,
 				B283EA7C1CF988A800640834 /* Assets.xcassets */,
 				B283EA7E1CF988A800640834 /* MainMenu.xib */,
@@ -104,6 +116,7 @@
 		B283EA891CF988A800640834 /* FMClipboardBrokerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2E309C01CFF22AC00E294EE /* InfoPlist.strings */,
 				B283EA8A1CF988A800640834 /* FMClipboardBrokerTests.swift */,
 				B283EA8C1CF988A800640834 /* Info.plist */,
 			);
@@ -113,6 +126,7 @@
 		B283EA941CF988A800640834 /* FMClipboardBrokerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B2E309CA1CFF22AD00E294EE /* InfoPlist.strings */,
 				B283EA951CF988A800640834 /* FMClipboardBrokerUITests.swift */,
 				B283EA971CF988A800640834 /* Info.plist */,
 			);
@@ -224,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283EA7D1CF988A800640834 /* Assets.xcassets in Resources */,
+				B2E309CD1CFF22AE00E294EE /* Localizable.strings in Resources */,
+				B2E309C31CFF22AD00E294EE /* InfoPlist.strings in Resources */,
 				B283EA801CF988A800640834 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E309BE1CFF22AC00E294EE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E309C81CFF22AD00E294EE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +307,42 @@
 			isa = PBXVariantGroup;
 			children = (
 				B283EA7F1CF988A800640834 /* Base */,
+				B2E309BB1CFF0E5900E294EE /* ja */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B2E309C01CFF22AC00E294EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E309BF1CFF22AC00E294EE /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2E309C51CFF22AD00E294EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E309C41CFF22AD00E294EE /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2E309CA1CFF22AD00E294EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E309C91CFF22AD00E294EE /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2E309CF1CFF22AE00E294EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E309CE1CFF22AE00E294EE /* ja */,
+				B2E309D01CFF28EB00E294EE /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -333,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -372,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -471,6 +523,7 @@
 				B283EA9C1CF988A800640834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B283EA9D1CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +532,7 @@
 				B283EA9F1CF988A800640834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B283EAA01CF988A800640834 /* Build configuration list for PBXNativeTarget "FMClipboardBrokerUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +541,7 @@
 				B283EAA21CF988A800640834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

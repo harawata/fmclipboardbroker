@@ -1,0 +1,48 @@
+/* %s definition copied to the clipboard. */
+"copiedToClipboard" = "%@ 定義をクリップボードにコピーしました。";
+
+/* Custom Function */
+"customFunction" = "カスタム関数";
+
+/* Failed to write XML string to the file. */
+"failedToExportXmlStr" = "XML 文字列をファイルに保存できませんでした。";
+
+/* Failed to read the file. */
+"failedToReadFile" = "ファイル読込時にエラーが発生しました。";
+
+/* Failed to update the clipboard. */
+"failedToSetClipboard" = "クリップボード設定時にエラーが発生しました。";
+
+/* Field */
+"field" = "フィールド";
+
+/* Invalid XML format. */
+"invalidXmlFormat" = "不正な XML データ";
+
+/* Layout */
+"layout" = "レイアウト";
+
+/* Layout (v12+) */
+"layout12" = "レイアウト（v12+）";
+
+/* Export file path must be set */
+"missingExportPath" = "ファイルの保存先を指定してください。";
+
+/* Failed to parse XML string copied from FM. */
+"parseErrorInLoadedXml" = "クリップボード内の XML データが正しくありません。";
+
+/* Script */
+"script" = "スクリプト";
+
+/* Script Step */
+"scriptStep" = "スクリプト・ステップ";
+
+/* Table */
+"table" = "テーブル";
+
+/* Unknown node name */
+"unknownNode" = "未対応の要素名: %@";
+
+/* Unknown fmxmlsnippet type */
+"unknownSnippetType" = "未対応の fmxmlsnippet タイプ: %@";
+

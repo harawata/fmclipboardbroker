@@ -1,0 +1,156 @@
+/* Class = "NSMenuItem"; title = "FMClipboardBroker"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FMClipboardBroker";
+
+/* Class = "NSMenuItem"; title = "Quit FMClipboardBroker"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "FMClipboardBroker を終了";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "About FMClipboardBroker"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "FMClipboardBroker について";
+
+/* Class = "NSButtonCell"; title = "Use the same path as export"; ObjectID = "5xz-Bb-pfz"; */
+"5xz-Bb-pfz.title" = "保存先と同じファイルを使用";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "やり直し";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "7RT-M6-zNr"; */
+"7RT-M6-zNr.title" = "Item 1";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "メイン メニュー";
+
+/* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "Bw7-FT-i3A"; */
+"Bw7-FT-i3A.title" = "別名で保存…";
+
+/* Class = "NSButtonCell"; title = "Choose..."; ObjectID = "DL7-yr-Ksz"; */
+"DL7-yr-Ksz.title" = "指定...";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "EET-bj-lrC"; */
+"EET-bj-lrC.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Load From..."; ObjectID = "EJz-Yx-9WC"; */
+"EJz-Yx-9WC.title" = "ファイルを指定して読込...";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "FMClipboardBroker Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "FMClipboardBroker ヘルプ";
+
+/* Class = "NSTextFieldCell"; title = "File path"; ObjectID = "Hmq-fc-5Pg"; */
+"Hmq-fc-5Pg.title" = "ファイル";
+
+/* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "Joy-kE-x32"; */
+"Joy-kE-x32.title" = "タイプ";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "KEH-zC-e4k"; */
+"KEH-zC-e4k.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "すべてを手前に表示";
+
+/* Class = "NSButtonCell"; title = "Auto-detect (require v11+)"; ObjectID = "LaD-NO-df3"; */
+"LaD-NO-df3.title" = "自動検出（v11以降）";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "最小化";
+
+/* Class = "NSMenuItem"; title = "Hide FMClipboardBroker"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "FMClipboardBroker を隠す";
+
+/* Class = "NSWindow"; title = "FMClipboardBroker"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "FMClipboardBroker";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "拡大／縮小";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "すべてを選択";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "ウィンドウ";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "UCW-sN-eC7"; */
+"UCW-sN-eC7.title" = "ラベル";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "ほかを隠す";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Load"; ObjectID = "Z2V-Sy-iFg"; */
+"Z2V-Sy-iFg.title" = "読込";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "ウィンドウ";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "取り消し";
+
+/* Class = "NSButtonCell"; title = "Choose..."; ObjectID = "dnL-vO-57k"; */
+"dnL-vO-57k.title" = "指定...";
+
+/* Class = "NSTextFieldCell"; title = "File path"; ObjectID = "fZA-na-GFx"; */
+"fZA-na-GFx.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "ペースト";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "サービス";
+
+/* Class = "NSBox"; title = "Clipboard to file"; ObjectID = "iEV-yY-P58"; */
+"iEV-yY-P58.title" = "クリップボードからファイルへ";
+
+/* Class = "NSButtonCell"; title = "Open saved file"; ObjectID = "l7O-EO-zgN"; */
+"l7O-EO-zgN.title" = "保存後にファイルを開く";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "lLV-CX-OYA"; */
+"lLV-CX-OYA.title" = "保存";
+
+/* Class = "NSButtonCell"; title = "Pretty print XML"; ObjectID = "m5p-gr-Aj9"; */
+"m5p-gr-Aj9.title" = "XML をフォーマット";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
+"pa3-QI-u2k.title" = "消去";
+
+/* Class = "NSButtonCell"; title = "Read layout in v12 format"; ObjectID = "pg5-99-uk5"; */
+"pg5-99-uk5.title" = "レイアウトを v12 形式で読み込む";
+
+/* Class = "NSButtonCell"; title = "Load"; ObjectID = "uEB-0W-4dR"; */
+"uEB-0W-4dR.title" = "読込";
+
+/* Class = "NSMenu"; title = "FMClipboardBroker"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FMClipboardBroker";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "カット";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "コピー";
+
+/* Class = "NSBox"; title = "File to clipboard"; ObjectID = "ynK-kn-6JW"; */
+"ynK-kn-6JW.title" = "ファイルからクリップボードへ";
+
+/* Class = "NSMenuItem"; title = "Save"; ObjectID = "zZi-vf-qHZ"; */
+"zZi-vf-qHZ.title" = "保存";
+

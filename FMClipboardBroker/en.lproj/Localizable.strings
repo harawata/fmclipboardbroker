@@ -1,0 +1,48 @@
+/* %s definition copied to the clipboard. */
+"copiedToClipboard" = "%@ definition is copied to the clipboard.";
+
+/* Custom Function */
+"customFunction" = "Custom Function";
+
+/* Failed to write XML string to the file. */
+"failedToExportXmlStr" = "Failed to write XML string to the file.";
+
+/* Failed to read the file. */
+"failedToReadFile" = "Failed to read the file.";
+
+/* Failed to update the clipboard. */
+"failedToSetClipboard" = "Failed to update the clipboard.";
+
+/* Field */
+"field" = "Field";
+
+/* Invalid XML format. */
+"invalidXmlFormat" = "Invalid XML format.";
+
+/* Layout */
+"layout" = "Layout";
+
+/* Layout (v12+) */
+"layout12" = "Layout（v12+）";
+
+/* Export file path must be set */
+"missingExportPath" = "Export file path must be set.";
+
+/* Failed to parse XML string copied from FM. */
+"parseErrorInLoadedXml" = "Failed to parse XML in the clipboard.";
+
+/* Script */
+"script" = "Script";
+
+/* Script Step */
+"scriptStep" = "Script Step";
+
+/* Table */
+"table" = "Table";
+
+/* Unknown node name */
+"unknownNode" = "Unknown node name: %@";
+
+/* Unknown fmxmlsnippet type */
+"unknownSnippetType" = "Unknown fmxmlsnippet type: %@";
+
