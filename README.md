@@ -16,6 +16,10 @@ The only new feature of 2.0 is 'Pretty print XML'. When enabled, the saved XML w
 
 - Mac OS X 10.9 or later (tested on 10.11)
 
+## Download
+
+Download the .dmg from the [latest release page](https://github.com/harawata/fmclipboardbroker/releases/latest).
+
 ## Bug report, feature request, question.
 
 Please use the [tracker](https://github.com/harawata/fmclipboardbroker/issues).
