@@ -10,7 +10,7 @@ All the features of version 1.x should be in 2.x as well, so please see the 1.x 
 
 The only new feature of 2.0 is 'Pretty print XML'. When enabled, the saved XML will be formatted.
 
-![main window](screen/main-window.png)
+<img src="screen/main-window.png" width="480" />
 
 ## System requirement
 
