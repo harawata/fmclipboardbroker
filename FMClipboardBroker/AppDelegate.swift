@@ -49,6 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(aNotification: NSNotification) {
 		settings = NSUserDefaults.standardUserDefaults()
+		setupDefaults()
 		typeArrayController.content = typeLabels
 		typeArrayController.setSelectionIndex(settings.integerForKey(contentSelection))
 		showMsg(nil)
