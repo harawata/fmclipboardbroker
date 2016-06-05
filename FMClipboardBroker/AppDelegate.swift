@@ -105,6 +105,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					} else {
 						showMsg(NSLocalizedString("missingExportPath", comment: "Export file path must be set"))
 					}
+				} else {
+					showMsg(NSLocalizedString("unsupportedClipboardType", comment: "Unsupported clipboard type"))
 				}
 			}
 		}
