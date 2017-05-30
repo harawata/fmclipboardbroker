@@ -8,13 +8,12 @@ All the features of version 1.x should be in 2.x as well, so please see the 1.x 
 - [English](http://www.key-planning.co.jp/software/fmclipboardbroker/fmclipboardbroker-english/)
 - [Japanese](http://www.key-planning.co.jp/software/fmclipboardbroker/)
 
-The only new feature of 2.0 is 'Pretty print XML'. When enabled, the saved XML will be formatted.
-
 <img src="screen/main-window.png" width="480" />
 
 ## System requirement
 
-- Mac OS X 10.9 or later (tested on 10.11)
+- Version [2.1](https://github.com/harawata/fmclipboardbroker/releases/tag/2.1) requires Mac OS X 10.11 or later (tested on 10.12)
+- Version [2.0](https://github.com/harawata/fmclipboardbroker/releases/tag/2.0) requires Mac OS X 10.9 or later (tested on 10.11)
 
 ## Download
 
