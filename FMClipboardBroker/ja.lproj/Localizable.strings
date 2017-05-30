@@ -1,6 +1,9 @@
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ 定義をクリップボードにコピーしました。";
 
+/* Value List */
+"valueList" = "値一覧";
+
 /* Custom Function */
 "customFunction" = "カスタム関数";
 

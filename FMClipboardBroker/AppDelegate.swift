@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let lastAltPath = "lastAltPath"
 	let prettyPrintXml = "prettyPrintXml"
 
-	let types = ["XMTB", "XMFD", "XMSC", "XMSS", "XMLO", "XML2", "XMFN"]
+	let types = ["XMTB", "XMFD", "XMSC", "XMSS", "XMLO", "XML2", "XMFN", "XMVL"]
 	let typeLabels = [
 		NSLocalizedString("table", comment: "Table"),
 		NSLocalizedString("field", comment: "Field"),
@@ -44,7 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		NSLocalizedString("scriptStep", comment: "Script Step"),
 		NSLocalizedString("layout", comment: "Layout"),
 		NSLocalizedString("layout12", comment: "Layout (v12+)"),
-		NSLocalizedString("customFunction", comment: "Custom Function")
+		NSLocalizedString("customFunction", comment: "Custom Function"),
+		NSLocalizedString("valueList", comment: "Value List")
 	]
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -245,6 +246,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					idx = 3
 				case "CustomFunction":
 					idx = 6
+				case "ValueList":
+					idx = 7
 				default:
 					showMsg(String(format: NSLocalizedString("unknownNode", comment: "Unknown node name"), (nextElem ?? "(nil)")))
 				}

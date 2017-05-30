@@ -1,6 +1,9 @@
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ definition is copied to the clipboard.";
 
+/* Value List */
+"valueList" = "Value List";
+
 /* Custom Function */
 "customFunction" = "Custom Function";
 
