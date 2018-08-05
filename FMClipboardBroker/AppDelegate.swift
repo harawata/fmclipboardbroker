@@ -80,7 +80,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func onClickSaveButton(_ sender: AnyObject) {
 		window.makeFirstResponder(nil)
-		if NSEvent.modifierFlags().contains(NSEventModifierFlags.shift) {
+		if NSEvent.modifierFlags.contains(NSEvent.ModifierFlags.shift) {
 			saveAs(sender)
 		} else {
 			saveClipboardToFile(settings.string(forKey: exportPath))
@@ -88,7 +88,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	func saveClipboardToFile(_ filePath: String?) {
-		let pasteboard = NSPasteboard.general()
+		let pasteboard = NSPasteboard.general
 		if let uti = pasteboard.pasteboardItems?[0].types[0] {
 			var output = false
 			var typeIdx = -1
@@ -98,7 +98,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					typeIdx = tempIdx
 				}
 			} else {
-				if uti == "dyn.agk8u" {
+				if uti.rawValue == "dyn.agk8u" {
 					// for theme
 					output = true
 					typeIdx = 8
@@ -115,7 +115,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 						saved = saveRawXml(path, xmlStr: xmlStr)
 					}
 					if saved && settings.bool(forKey: openFileAfterExport) {
-						NSWorkspace.shared().openFile(path)
+						NSWorkspace.shared.openFile(path)
 					}
 				} else {
 					showMsg(NSLocalizedString("missingExportPath", comment: "Export file path must be set"))
@@ -139,8 +139,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func savePrettyXml(_ path: String!, xmlStr: String?) -> Bool {
 		if let str = xmlStr {
 			do {
-				let xml = try XMLDocument(xmlString: str, options: Int(XMLNode.Options.nodePrettyPrint.rawValue))
-				let xmlData = xml.xmlData(withOptions: Int(XMLNode.Options.nodePrettyPrint.rawValue))
+				let xml = try XMLDocument(xmlString: str, options: XMLNode.Options(rawValue: XMLNode.Options.RawValue(Int(XMLNode.Options.nodePrettyPrint.rawValue))))
+				let xmlData = xml.xmlData(options: XMLNode.Options(rawValue: XMLNode.Options.RawValue(Int(XMLNode.Options.nodePrettyPrint.rawValue))))
 				return ((try? xmlData.write(to: URL(fileURLWithPath: path), options: [.atomic])) != nil)
 			} catch {
 				showMsg(NSLocalizedString("parseErrorInLoadedXml", comment: "Failed to parse XML string copied from FM."))
@@ -156,7 +156,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func onClickLoadButton(_ sender: AnyObject) {
 		window.makeFirstResponder(nil)
-		if NSEvent.modifierFlags().contains(NSEventModifierFlags.shift) {
+		if NSEvent.modifierFlags.contains(NSEvent.ModifierFlags.shift) {
 			loadFrom(sender)
 		} else {
 			let path = settings.bool(forKey: useSamePath) ? settings.string(forKey: exportPath) : settings.string(forKey: importPath)
@@ -165,7 +165,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	func loadClipboardFromFile(_ filePath: String?) {
-		let pasteboard = NSPasteboard.general()
+		let pasteboard = NSPasteboard.general
 		do {
 			if let path = filePath {
 				let xmlStr = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
@@ -176,8 +176,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 							// for theme
 							type = "dyn.agk8u"
 						}
-						pasteboard.declareTypes([type], owner: nil)
-						if pasteboard.setString(xmlStr as String, forType: type) {
+						pasteboard.declareTypes([NSPasteboard.PasteboardType(rawValue: type)], owner: nil)
+						if pasteboard.setString(xmlStr as String, forType: NSPasteboard.PasteboardType(rawValue: type)) {
 							if let idx = types.index(of: ostype) {
 								showMsg(String(format: NSLocalizedString("copiedToClipboard", comment: "%s definition copied to the clipboard."), typeLabels[idx]))
 							}
@@ -192,7 +192,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 
-	func showSavePanel(_ useAltPath: Bool, function: @escaping (String!) -> Void) {
+	func showSavePanel(_ useAltPath: Bool, function: @escaping (String?) -> Void) {
 		let savePanel = NSSavePanel()
 		var initPath: String! = nil
 		if useAltPath {
@@ -211,8 +211,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		let initUrl = URL(fileURLWithPath: initPath, isDirectory: false)
 		savePanel.directoryURL = initUrl.deletingLastPathComponent()
 		savePanel.nameFieldStringValue = initUrl.lastPathComponent == "" ? defaultFilename : initUrl.lastPathComponent
-		savePanel.begin { (result: Int) -> Void in
-			if result == NSFileHandlingPanelOKButton {
+		savePanel.begin (completionHandler: { (result) -> Void in
+			if result == NSApplication.ModalResponse.OK {
 				if let path = savePanel.url?.path {
 					if useAltPath {
 						self.settings.setValue(path, forKey: self.lastAltPath)
@@ -220,17 +220,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					function(path)
 				}
 			}
-		}
+		})
 	}
 
-	func showOpenPanel(_ function: @escaping (String!) -> Void) {
+	func showOpenPanel(_ function: @escaping (String?) -> Void) {
 		let openPanel = NSOpenPanel()
 		openPanel.allowsMultipleSelection = false
 		openPanel.canChooseDirectories = false
 		openPanel.canCreateDirectories = true
 		openPanel.canChooseFiles = true
-		openPanel.begin { (result: Int) -> Void in
-			if result == NSFileHandlingPanelOKButton {
+		openPanel.begin { (result) -> Void in
+			if result == NSApplication.ModalResponse.OK {
 				if let path = openPanel.url?.path {
 					function(path)
 				}
@@ -243,7 +243,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 			return types[typeArrayController.selectionIndex]
 		}
 		do {
-			let xml = try XMLDocument(xmlString: xmlStr, options: Int(XMLNode.Options.nodePrettyPrint.rawValue))
+			let xml = try XMLDocument(xmlString: xmlStr, options: XMLNode.Options(rawValue: XMLNode.Options.RawValue(Int(XMLNode.Options.nodePrettyPrint.rawValue))))
 			let rootElem = xml.rootElement()
 			let snippetType = rootElem?.attribute(forName: "type")?.stringValue
 			var idx: Int! = -1
