@@ -118,6 +118,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 				}
 			} else {
 				showMsg(NSLocalizedString("unsupportedClipboardType", comment: "Unsupported clipboard type"))
+				showMsg(String(format: NSLocalizedString("unsupportedClipboardType", comment: "Unsupported clipboard type"), uti.rawValue))
 			}
 		}
 	}

@@ -53,4 +53,4 @@
 "unknownSnippetType" = "Unknown fmxmlsnippet type: %@";
 
 /* Unsupported clipboard type */
-"unsupportedClipboardType" = "Unsupported clipboard type.";
+"unsupportedClipboardType" = "Unsupported clipboard type: %@";

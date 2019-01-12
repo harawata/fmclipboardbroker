@@ -442,7 +442,7 @@
                     </box>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NoD-4e-1mf">
                         <rect key="frame" x="18" y="20" width="444" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="UCW-sN-eC7">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>

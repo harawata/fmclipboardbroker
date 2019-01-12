@@ -53,4 +53,4 @@
 "unknownSnippetType" = "未対応の fmxmlsnippet タイプ: %@";
 
 /* Unsupported clipboard type */
-"unsupportedClipboardType" = "未対応のクリップボードタイプです。";
+"unsupportedClipboardType" = "未対応のクリップボードタイプ %@ です。";
