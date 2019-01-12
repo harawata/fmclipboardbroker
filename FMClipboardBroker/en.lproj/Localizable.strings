@@ -1,3 +1,6 @@
+/* Theme */
+"theme" = "Theme";
+
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ definition is copied to the clipboard.";
 

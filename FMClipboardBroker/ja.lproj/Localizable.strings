@@ -1,3 +1,6 @@
+/* Theme */
+"theme" = "テーマ";
+
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ 定義をクリップボードにコピーしました。";
 
