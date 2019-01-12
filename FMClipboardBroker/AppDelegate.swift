@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let lastAltPath = "lastAltPath"
 	let prettyPrintXml = "prettyPrintXml"
 
-	let types = ["XMTB", "XMFD", "XMSC", "XMSS", "XMLO", "XML2", "XMFN", "XMVL"]
+	let types = ["XMTB", "XMFD", "XMSC", "XMSS", "XMLO", "XML2", "XMFN", "XMVL", ""]
 	let typeLabels = [
 		NSLocalizedString("table", comment: "Table"),
 		NSLocalizedString("field", comment: "Field"),
@@ -45,7 +45,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		NSLocalizedString("layout", comment: "Layout"),
 		NSLocalizedString("layout12", comment: "Layout (v12+)"),
 		NSLocalizedString("customFunction", comment: "Custom Function"),
-		NSLocalizedString("valueList", comment: "Value List")
+		NSLocalizedString("valueList", comment: "Value List"),
+		NSLocalizedString("theme", comment: "Theme")
 	]
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -89,26 +90,38 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func saveClipboardToFile(_ filePath: String?) {
 		let pasteboard = NSPasteboard.general()
 		if let uti = pasteboard.pasteboardItems?[0].types[0] {
+			var output = false
+			var typeIdx = -1
 			if let ostype = UTTypeCopyPreferredTagWithClass(uti as CFString, kUTTagClassOSType)?.takeRetainedValue() as String? {
-				if let typeIdx = types.index(of: ostype) {
-					typeArrayController.setSelectionIndex(typeIdx)
-					let xmlStr = pasteboard.string(forType: uti)
-					if let path = filePath {
-						var saved = false
-						if settings.bool(forKey: prettyPrintXml) {
-							saved = savePrettyXml(path, xmlStr: xmlStr)
-						} else {
-							saved = saveRawXml(path, xmlStr: xmlStr)
-						}
-						if saved && settings.bool(forKey: openFileAfterExport) {
-							NSWorkspace.shared().openFile(path)
-						}
+				if let tempIdx = types.index(of: ostype) {
+					output = true
+					typeIdx = tempIdx
+				}
+			} else {
+				if uti == "dyn.agk8u" {
+					// for theme
+					output = true
+					typeIdx = 8
+				}
+			}
+			if output == true && typeIdx > -1 {
+				typeArrayController.setSelectionIndex(typeIdx)
+				let xmlStr = pasteboard.string(forType: uti)
+				if let path = filePath {
+					var saved = false
+					if settings.bool(forKey: prettyPrintXml) {
+						saved = savePrettyXml(path, xmlStr: xmlStr)
 					} else {
-						showMsg(NSLocalizedString("missingExportPath", comment: "Export file path must be set"))
+						saved = saveRawXml(path, xmlStr: xmlStr)
+					}
+					if saved && settings.bool(forKey: openFileAfterExport) {
+						NSWorkspace.shared().openFile(path)
 					}
 				} else {
-					showMsg(NSLocalizedString("unsupportedClipboardType", comment: "Unsupported clipboard type"))
+					showMsg(NSLocalizedString("missingExportPath", comment: "Export file path must be set"))
 				}
+			} else {
+				showMsg(NSLocalizedString("unsupportedClipboardType", comment: "Unsupported clipboard type"))
 			}
 		}
 	}
@@ -158,7 +171,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 				let xmlStr = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
 				if let ostype = detectOstypeFromXmlStr(xmlStr) {
 					let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassOSType, ostype as CFString, kUTTypeData)?.takeRetainedValue()
-					if let type = uti as String? {
+					if var type = uti as String? {
+						if type == "dyn.ah62d4rv4gk8u" {
+							// for theme
+							type = "dyn.agk8u"
+						}
 						pasteboard.declareTypes([type], owner: nil)
 						if pasteboard.setString(xmlStr as String, forType: type) {
 							if let idx = types.index(of: ostype) {
@@ -248,6 +265,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					idx = 6
 				case "ValueList":
 					idx = 7
+				case "Theme":
+					idx = 8
 				default:
 					showMsg(String(format: NSLocalizedString("unknownNode", comment: "Unknown node name"), (nextElem ?? "(nil)")))
 				}
