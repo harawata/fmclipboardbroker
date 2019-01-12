@@ -36,7 +36,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let lastAltPath = "lastAltPath"
 	let prettyPrintXml = "prettyPrintXml"
 
-	let types = ["XMTB", "XMFD", "XMSC", "XMSS", "XMLO", "XML2", "XMFN", "XMVL", ""]
+	let types = [
+		"dyn.ah62d4rv4gk8zuxnykk", // tables (XMTB)
+		"dyn.ah62d4rv4gk8zuxngku", // fields (XMFD)
+		"dyn.ah62d4rv4gk8zuxnxkq", // scripts (XMSC)
+		"dyn.ah62d4rv4gk8zuxnxnq", // script steps (XMSS)
+		"dyn.ah62d4rv4gk8zuxnqm6", // layout objects (XMLO)
+		"dyn.ah62d4rv4gk8zuxnqgk", // layout objects v12+ (XML2)
+		"dyn.ah62d4rv4gk8zuxngm2", // custom functions (XMFN)
+		"dyn.ah62d4rv4gk8zuxn0mu", // value lists (XMVL)
+		"dyn.agk8u", // themes (empty)
+	]
 	let typeLabels = [
 		NSLocalizedString("table", comment: "Table"),
 		NSLocalizedString("field", comment: "Field"),
@@ -46,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		NSLocalizedString("layout12", comment: "Layout (v12+)"),
 		NSLocalizedString("customFunction", comment: "Custom Function"),
 		NSLocalizedString("valueList", comment: "Value List"),
-		NSLocalizedString("theme", comment: "Theme")
+		NSLocalizedString("theme", comment: "Theme"),
 	]
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -90,21 +100,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func saveClipboardToFile(_ filePath: String?) {
 		let pasteboard = NSPasteboard.general
 		if let uti = pasteboard.pasteboardItems?[0].types[0] {
-			var output = false
-			var typeIdx = -1
-			if let ostype = UTTypeCopyPreferredTagWithClass(uti as CFString, kUTTagClassOSType)?.takeRetainedValue() as String? {
-				if let tempIdx = types.index(of: ostype) {
-					output = true
-					typeIdx = tempIdx
-				}
-			} else {
-				if uti.rawValue == "dyn.agk8u" {
-					// for theme
-					output = true
-					typeIdx = 8
-				}
-			}
-			if output == true && typeIdx > -1 {
+			if let typeIdx = types.index(of: uti.rawValue) {
 				typeArrayController.setSelectionIndex(typeIdx)
 				let xmlStr = pasteboard.string(forType: uti)
 				if let path = filePath {
@@ -169,21 +165,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		do {
 			if let path = filePath {
 				let xmlStr = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-				if let ostype = detectOstypeFromXmlStr(xmlStr) {
-					let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassOSType, ostype as CFString, kUTTypeData)?.takeRetainedValue()
-					if var type = uti as String? {
-						if type == "dyn.ah62d4rv4gk8u" {
-							// for theme
-							type = "dyn.agk8u"
+				if let uti = detectOstypeFromXmlStr(xmlStr) {
+					pasteboard.declareTypes([NSPasteboard.PasteboardType(rawValue: uti)], owner: nil)
+					if pasteboard.setString(xmlStr as String, forType: NSPasteboard.PasteboardType(rawValue: uti)) {
+						if let idx = types.index(of: uti) {
+							showMsg(String(format: NSLocalizedString("copiedToClipboard", comment: "%s definition copied to the clipboard."), typeLabels[idx]))
 						}
-						pasteboard.declareTypes([NSPasteboard.PasteboardType(rawValue: type)], owner: nil)
-						if pasteboard.setString(xmlStr as String, forType: NSPasteboard.PasteboardType(rawValue: type)) {
-							if let idx = types.index(of: ostype) {
-								showMsg(String(format: NSLocalizedString("copiedToClipboard", comment: "%s definition copied to the clipboard."), typeLabels[idx]))
-							}
-						} else {
-							showMsg(NSLocalizedString("failedToSetClipboard", comment: "Failed to update the clipboard."))
-						}
+					} else {
+						showMsg(NSLocalizedString("failedToSetClipboard", comment: "Failed to update the clipboard."))
 					}
 				}
 			}
