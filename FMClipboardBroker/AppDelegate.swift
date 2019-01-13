@@ -139,7 +139,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 				let xmlData = xml.xmlData(options: XMLNode.Options(rawValue: XMLNode.Options.RawValue(Int(XMLNode.Options.nodePrettyPrint.rawValue))))
 				return ((try? xmlData.write(to: URL(fileURLWithPath: path), options: [.atomic])) != nil)
 			} catch {
-				showMsg(NSLocalizedString("parseErrorInLoadedXml", comment: "Failed to parse XML string copied from FM."))
+				showMsg(NSLocalizedString("failedToExportXmlStr", comment: "Failed to write XML string to the file."))
 			}
 		}
 		return false
