@@ -45,6 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		"dyn.ah62d4rv4gk8zuxnqgk", // layout objects v12+ (XML2)
 		"dyn.ah62d4rv4gk8zuxngm2", // custom functions (XMFN)
 		"dyn.ah62d4rv4gk8zuxn0mu", // value lists (XMVL)
+		"dyn.ah62d4rv4gk8zuxnyma", // themes for Claris FileMaker 2024
 		"dyn.agk8u", // themes (empty)
 	]
 	let typeLabels = [
@@ -56,6 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		NSLocalizedString("layout12", comment: "Layout (v12+)"),
 		NSLocalizedString("customFunction", comment: "Custom Function"),
 		NSLocalizedString("valueList", comment: "Value List"),
+		NSLocalizedString("theme", comment: "Theme"),
 		NSLocalizedString("theme", comment: "Theme"),
 	]
 
