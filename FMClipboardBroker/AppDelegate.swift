@@ -249,6 +249,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					idx = 0
 				case "Field":
 					idx = 1
+				case "Group":
+					idx = 2
 				case "Script":
 					idx = 2
 				case "Step":
