@@ -133,6 +133,9 @@
 /* Class = "NSButtonCell"; title = "Read layout in v12 format"; ObjectID = "pg5-99-uk5"; */
 "pg5-99-uk5.title" = "レイアウトを v12 形式で読み込む";
 
+/* Class = "NSButtonCell"; title = "Read theme in v2024 format"; ObjectID = "jV4-FM-G09"; */
+"jV4-FM-G09.title" = "テーマを v2024 形式で読み込む";
+
 /* Class = "NSButtonCell"; title = "Load"; ObjectID = "uEB-0W-4dR"; */
 "uEB-0W-4dR.title" = "読込";
 

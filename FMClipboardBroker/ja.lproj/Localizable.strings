@@ -1,6 +1,3 @@
-/* Theme */
-"theme" = "テーマ";
-
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ 定義をクリップボードにコピーしました。";
 
@@ -45,6 +42,12 @@
 
 /* Table */
 "table" = "テーブル";
+
+/* Theme */
+"theme" = "テーマ";
+
+/* Theme (v2024+) */
+"theme2024" = "テーマ（v2024+）";
 
 /* Unknown node name */
 "unknownNode" = "未対応の要素名: %@";

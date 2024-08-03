@@ -1,6 +1,3 @@
-/* Theme */
-"theme" = "Theme";
-
 /* %s definition copied to the clipboard. */
 "copiedToClipboard" = "%@ definition is copied to the clipboard.";
 
@@ -29,7 +26,7 @@
 "layout" = "Layout";
 
 /* Layout (v12+) */
-"layout12" = "Layout（v12+）";
+"layout12" = "Layout (v12+)";
 
 /* Export file path must be set */
 "missingExportPath" = "Export file path must be set.";
@@ -45,6 +42,12 @@
 
 /* Table */
 "table" = "Table";
+
+/* Theme */
+"theme" = "Theme";
+
+/* Theme (v2024+) */
+"theme2024" = "Theme (v2024+)";
 
 /* Unknown node name */
 "unknownNode" = "Unknown node name: %@";
