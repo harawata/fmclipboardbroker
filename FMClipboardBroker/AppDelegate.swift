@@ -33,6 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let contentSelection = "contentSelection"
 	let autoDetect = "autoDetect"
 	let readLayoutIn12Format = "readLayoutIn12Format"
+	let readThemeIn2024Format = "readThemeIn2024Format"
 	let lastAltPath = "lastAltPath"
 	let prettyPrintXml = "prettyPrintXml"
 
@@ -45,7 +46,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		"dyn.ah62d4rv4gk8zuxnqgk", // layout objects v12+ (XML2)
 		"dyn.ah62d4rv4gk8zuxngm2", // custom functions (XMFN)
 		"dyn.ah62d4rv4gk8zuxn0mu", // value lists (XMVL)
-		"dyn.agk8u", // themes (empty)
+		"dyn.agk8u",               // themes
+		"dyn.ah62d4rv4gk8zuxnyma", // themes v2024+
 	]
 	let typeLabels = [
 		NSLocalizedString("table", comment: "Table"),
@@ -57,6 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		NSLocalizedString("customFunction", comment: "Custom Function"),
 		NSLocalizedString("valueList", comment: "Value List"),
 		NSLocalizedString("theme", comment: "Theme"),
+		NSLocalizedString("theme2024", comment: "Theme (v2024+)"),
 	]
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -246,6 +249,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					idx = 0
 				case "Field":
 					idx = 1
+				case "Group":
+					idx = 2
 				case "Script":
 					idx = 2
 				case "Step":
@@ -255,7 +260,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 				case "ValueList":
 					idx = 7
 				case "Theme":
-					idx = 8
+					idx = settings.bool(forKey: readThemeIn2024Format) ? 9 : 8
 				default:
 					showMsg(String(format: NSLocalizedString("unknownNode", comment: "Unknown node name"), (nextElem ?? "(nil)")))
 				}
@@ -286,7 +291,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 			useSamePath: true,
 			contentSelection: 0,
 			autoDetect: true,
-			readLayoutIn12Format: true
+			readLayoutIn12Format: true,
+			readThemeIn2024Format: true
 		]
 		settings.register(defaults: defaults)
 	}
