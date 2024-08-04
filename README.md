@@ -12,6 +12,7 @@ All the features of version 1.x should be in 2.x as well, so please see the 1.x 
 
 ## System requirement
 
+- Version [2.3](https://github.com/harawata/fmclipboardbroker/releases/tag/2.3) requires Mac OS X 10.13 or later (tested on 14.5)
 - Version [2.1](https://github.com/harawata/fmclipboardbroker/releases/tag/2.1) requires Mac OS X 10.11 or later (tested on 10.12)
 - Version [2.0](https://github.com/harawata/fmclipboardbroker/releases/tag/2.0) requires Mac OS X 10.9 or later (tested on 10.11)
 
